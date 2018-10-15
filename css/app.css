@@ -64,6 +64,29 @@ body
 	animation: animateAviao2 10s linear infinite;
 	transition: 1.5s ease-out;
 }
+.bus1
+{
+	position: absolute;
+    bottom: 21%;
+    max-width: 8%;
+    -webkit-animation: animateAviao1 10s linear infinite;
+    -moz-animation: animateAviao1 10s linear infinite;
+    animation: animateAviao1 10s linear infinite;
+	transition: 1.5s ease-out;
+	opacity: 0;
+}
+.bus2
+{
+	position: absolute;
+	bottom: 42%;
+	right: 0%;
+	max-width: 5%;
+	-webkit-animation: animateAviao2 10s linear infinite;
+	-moz-animation: animateAviao2 10s linear infinite;
+	animation: animateAviao2 10s linear infinite;
+	transition: 1.5s ease-out;
+	opacity: 0;
+}
 .balao
 {
 	position: absolute;
@@ -76,7 +99,97 @@ body
 	z-index: 1;
 }
 
-
+.Moon
+{
+	position: absolute;
+    z-index: 999;
+    right: 23em;
+	top: 5em;
+	display: none;
+	opacity: 0;
+	transition: .3s ease-out;
+	visibility: hidden;
+	justify-content: center;
+	align-items: center
+}
+.Moon .span1
+{
+	background: #ffeb99;
+    width: 14em;
+    height: 13em;
+    position: absolute;
+    border-radius: 64%;
+	opacity: 0.1;
+	z-index: 9;
+    filter: blur(6px);
+}
+.Moon .span2
+{
+	background: #ffeb99;
+    width: 9em;
+    height: 9em;
+    position: absolute;
+    border-radius: 64%;
+    opacity: 0.2;
+    filter: blur(15px);
+}
+.satellite
+{
+	left: -150px; /* start off screen */
+	top: 50px;  
+	margin-top: -38px;
+	margin-left: -45px;
+	position: absolute;
+	max-width: 5em;
+	z-index: 999999;
+	opacity: 0;
+}
+.Moon img
+{
+	max-width: 5em;
+}
+.HourControll
+{
+	position: absolute;
+    left: 2em;
+    bottom: 3em;
+    z-index: 999999999;
+}
+.HourControll input
+{
+	border: none;
+    padding: 1em 2em;
+    border-radius: 23px;
+	width: 4em;
+	margin-right: 1em
+}
+.HourControll button
+{
+    background: transparent;
+    border: 1px solid #fff;
+    padding: 1em 3em;
+    border-radius: 56px;
+	color: #fff;
+	transition: .3s ease-out;
+	cursor: pointer
+}
+.HourControll button:hover
+{
+	color: #027aaa;
+	background: #fff
+}
+.HourControll input:focus
+{
+	outline: none;
+}
+.HourControll button:focus
+{
+	outline: none;
+}
+.HourControll button:active
+{
+	background: #f6f6f6;
+}
 /* KEYFRAMES */
 
 @-webkit-keyframes animateAviao1 {
